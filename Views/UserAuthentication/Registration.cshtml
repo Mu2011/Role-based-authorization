@@ -1,0 +1,62 @@
+@model Mu_Dot8Identity.Models.DTO.RegistrationModel
+@{
+  Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <form asp-action="Registration" method="post">  
+            <h3>Registration</h3>
+            <div class="from-group">
+              <label>Name</label>
+              <input type="text" asp-for="Name" class="form-control" placeholder="Enter Name" />
+              <span class="text-denger"asp-validation-for="Name"></span>
+            </div>
+            <div class="from-group">
+              <label>UserName</label>
+              <input type="text" asp-for="UserName" class="form-control" placeholder="Enter UserName" />
+              <span class="text-denger"asp-validation-for="UserName"></span>
+            </div>
+            <div class="from-group">
+              <label>Email</label>
+              <input type="Email" asp-for="Email" class="form-control" placeholder="Enter Email" />
+              <span class="text-denger"asp-validation-for="Email"></span>
+            </div>
+            <div class="from-group">
+              <label>Password</label>
+              <input type="Password" asp-for="Password" class="form-control" placeholder="Enter Password" />
+              <span class="text-denger"asp-validation-for="Password"></span>
+            </div>
+            <div class="from-group">
+              <label>Confirm Password</label>
+              <input type="Password" asp-for="ConfirmPassword" class="form-control" placeholder="Enter Confirm Password" />
+              <span class="text-denger"asp-validation-for="ConfirmPassword"></span>
+            @if (TempData["msg"] != null)
+            {
+              <div class="from-group">
+                @TempData["msg"]
+              </div>
+            }
+            <button type="submit" class="btn btn-primary">SignUp</button>
+            <a class="btn btn-info" href="/UserAuthentication/Login">Login</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
