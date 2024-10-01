@@ -31,8 +31,7 @@ This project implements user authentication and authorization using ASP.NET Core
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo/dotnet-8-identity-project.git
-   cd dotnet-8-identity-project
+   git clone https://github.com/Mu2011/Role-based-authorization.git
    ```
 
 2. Install the required NuGet packages:
@@ -69,17 +68,14 @@ This project implements user authentication and authorization using ASP.NET Core
    https://localhost:5001
    ```
 
-## Email Configuration (Optional)
+## Additional Resources
 
-To enable email confirmation and password reset, configure MailKit in `appsettings.json`:
-
-```json
-{
-  "EmailSettings": {
-    "SmtpServer": "smtp.example.com",
-    "SmtpPort": 587,
-    "SenderEmail": "your-email@example.com",
-    "SenderPassword": "your-email-password"
-  }
-}
-```
+- [ASP.NET Core Identity Documentation](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-8.0)
+- [Entity Framework Core Documentation](https://docs.microsoft.com/en-us/ef/core/)
+- [SQLite Documentation](https://sqlite.org/index.html)
+- [Visual Studio Codium Documentation](https://vscodium.com/)
+- [.NET Core Documentation](https://docs.microsoft.com/en-us/dotnet/core/)
+- [ASP.NET Core Documentation](https://docs.microsoft.com/en-us/aspnet/core/)
+- [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
+- [Razor Pages Documentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/razor-pages?view=aspnetcore-8.0)
+- [ASP.NET Core MVC Documentation](https://docs.microsoft.com/en-us/aspnet/core/mvc/?view=aspnetcore-8.0)
